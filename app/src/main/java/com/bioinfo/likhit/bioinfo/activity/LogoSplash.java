@@ -53,7 +53,7 @@ public class LogoSplash extends AppCompatActivity {
 
 
     //Handler for showing Password
-    void showPassword(View v){
+    public void showPassword(View v){
         if(showPassword.isChecked()){
             password.setInputType(InputType.TYPE_CLASS_TEXT);
         }
@@ -63,7 +63,7 @@ public class LogoSplash extends AppCompatActivity {
     }
 
     //Login on click Method
-    void logIn(View v){
+    public void logIn(View v){
 
         user=userName.getText().toString();
         pass=password.getText().toString();
