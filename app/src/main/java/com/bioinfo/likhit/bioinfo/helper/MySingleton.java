@@ -1,3 +1,9 @@
+/*
+Created By: Likhit C U
+Date:02-08-2018
+Singleton class
+ */
+
 package com.bioinfo.likhit.bioinfo.helper;
 
 import android.app.Application;

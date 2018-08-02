@@ -1,3 +1,9 @@
+/*
+Created By: Likhit C U
+Date:02-08-2018
+Activity class for login screen
+ */
+
 package com.bioinfo.likhit.bioinfo.activity;
 
 import android.app.ProgressDialog;
@@ -13,15 +19,11 @@ import android.widget.CheckBox;
 import android.widget.Toast;
 
 import com.android.volley.Request;
-import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.bioinfo.likhit.bioinfo.R;
 import com.bioinfo.likhit.bioinfo.helper.MySingleton;
-import com.bioinfo.likhit.bioinfo.model.Details;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -32,8 +34,6 @@ public class LogoSplash extends AppCompatActivity {
     private EditText password;
     private CheckBox showPassword;
     private String user,pass;
-    //private Details userInfo;
-    private String usernamedetail,passworddetail,id,name,age,city,company;
     private String json_url_main="http://www.beta.colourdrive.in/apk/user_detail.php?";
 
     @Override
@@ -45,6 +45,7 @@ public class LogoSplash extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_logo_splash);
 
+        //Views from UI
         userName=(EditText)findViewById(R.id.userName);
         password=(EditText)findViewById(R.id.password);
         showPassword=(CheckBox)findViewById(R.id.showPassword);
@@ -70,27 +71,7 @@ public class LogoSplash extends AppCompatActivity {
             Toast.makeText(this,"Please fill the required Credentials",Toast.LENGTH_LONG).show();
         }
         else{
-//            boolean check= getUserInfo();
             getUserInfo();
-//            Intent intent = new Intent(this,LogoDetail.class);
-//            intent.putExtra("username",userInfo.getUserName());
-//            intent.putExtra("password",userInfo.getPassword());
-//            intent.putExtra("id",userInfo.getId());
-//            intent.putExtra("name",userInfo.getName());
-//            intent.putExtra("age",userInfo.getAge());
-//            intent.putExtra("city",userInfo.getName());
-//            intent.putExtra("contact",userInfo.getContact());
-//            if(check){
-//                Intent intent = new Intent(this,LogoDetail.class);
-//                intent.putExtra("username",usernamedetail);
-//                intent.putExtra("password",passworddetail);
-//                intent.putExtra("id",id);
-//                intent.putExtra("name",name);
-//                intent.putExtra("age",age);
-//                intent.putExtra("city",city);
-//                intent.putExtra("company",company);
-//                this.startActivity(intent);
-//            }
 
         }
 
@@ -120,6 +101,7 @@ public class LogoSplash extends AppCompatActivity {
                             e.printStackTrace();
                         }
                         progressDialog.dismiss();
+                        Toast.makeText(getApplicationContext(),"Login Successful",Toast.LENGTH_SHORT).show();
 
                     }
                 }, new Response.ErrorListener() {
@@ -130,10 +112,9 @@ public class LogoSplash extends AppCompatActivity {
             }
         }
         );
-        //MySingleton.getInstance().addToRequestQueue(jsonObjectRequest);
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(jsonObjectRequest);
-        //password.setText("Done");
+        MySingleton.getInstance().addToRequestQueue(jsonObjectRequest);
+//        RequestQueue requestQueue = Volley.newRequestQueue(this);
+//        requestQueue.add(jsonObjectRequest);
 
     }
 }
