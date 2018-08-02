@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:backgroundTint="@android:color/white"
+    tools:context=".activity.LogoSplash">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="446dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginStart="92dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="127dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="@string/userName_hint"
+        android:inputType="text"
+        android:textColorLink="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="248dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginStart="86dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:ems="10"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:textColorLink="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/showPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="197dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="19dp"
+        android:buttonTint="@android:color/holo_blue_dark"
+        android:onClick="showPassword"
+        android:text="Show Password"
+        android:textColorLink="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="45dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="logIn"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showPassword" />
+
+</android.support.constraint.ConstraintLayout>

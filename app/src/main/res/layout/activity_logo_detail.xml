@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:backgroundTint="@android:color/white"
+    tools:context=".activity.LogoSplash">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="446dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginStart="92dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userNameDetail"
+        android:layout_width="129dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="56dp"
+        android:text="Username :"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/passwordDetail"
+        android:layout_width="129dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="26dp"
+        android:text="Password :"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userNameDetail" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="129dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="26dp"
+        android:text="Id :"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordDetail" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="129dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="26dp"
+        android:text="Age :"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="129dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="26dp"
+        android:text="Name :"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="129dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="26dp"
+        android:text="City :"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+
+    <TextView
+        android:id="@+id/company"
+        android:layout_width="129dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="26dp"
+        android:text="Company :"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city" />
+
+    <TextView
+        android:id="@+id/userNameAnswer"
+        android:layout_width="129dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/userNameDetail"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/passwordAnswer"
+        android:layout_width="129dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="26dp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/passwordDetail"
+        app:layout_constraintTop_toBottomOf="@+id/userNameAnswer" />
+
+    <TextView
+        android:id="@+id/idAnswer"
+        android:layout_width="129dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="26dp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id"
+        app:layout_constraintTop_toBottomOf="@+id/passwordAnswer" />
+
+    <TextView
+        android:id="@+id/nameAnswer"
+        android:layout_width="129dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="26dp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/idAnswer" />
+
+    <TextView
+        android:id="@+id/ageAnswer"
+        android:layout_width="129dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="26dp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/age"
+        app:layout_constraintTop_toBottomOf="@+id/nameAnswer" />
+
+    <TextView
+        android:id="@+id/cityAnswer"
+        android:layout_width="129dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="26dp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/city"
+        app:layout_constraintTop_toBottomOf="@+id/ageAnswer" />
+
+    <TextView
+        android:id="@+id/companyAnswer"
+        android:layout_width="129dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="26dp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/company"
+        app:layout_constraintTop_toBottomOf="@+id/cityAnswer" />
+
+
+</android.support.constraint.ConstraintLayout>

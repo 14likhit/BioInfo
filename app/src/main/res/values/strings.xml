@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BioInfo</string>
+    <string name="userName_hint">Username</string>
+    <string name="password_hint">Password</string>
+</resources>
